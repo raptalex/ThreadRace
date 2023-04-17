@@ -7,6 +7,10 @@
             Console.WriteLine("Read, Set Go...");
             int t1Location = 0;
             int t2Location = 0;
+            int t3Location = 0;
+            int t4Location = 0;
+            int t5Location = 0;
+            int t6Location = 0;
 
             //Creating Threads
             Thread t1 = new Thread(delegate ()
@@ -14,7 +18,9 @@
                 Thread.CurrentThread.Name = "Speedy Gonzales";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
                         MoveIt(ref t1Location);
                 }
 
@@ -24,7 +30,9 @@
                 Thread.CurrentThread.Name = "Road Runner";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
                         MoveIt(ref t2Location);
 
                 }
@@ -36,9 +44,10 @@
                 Thread.CurrentThread.Name = "Wile E. Coyote";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
-                        MoveIt(ref t2Location);
-
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
+                        MoveIt(ref t3Location);
                 }
             });
 
@@ -47,9 +56,10 @@
                 Thread.CurrentThread.Name = "Bugs Bunny";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
-                        MoveIt(ref t2Location);
-
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
+                        MoveIt(ref t4Location);
                 }
             });
 
@@ -58,9 +68,10 @@
                 Thread.CurrentThread.Name = "Daffy Duck";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
-                        MoveIt(ref t2Location);
-
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
+                        MoveIt(ref t5Location);
                 }
             });
 
@@ -69,9 +80,10 @@
                 Thread.CurrentThread.Name = "Elmber Fudd";
                 for (int i = 0; i < 100; i++)
                 {
-                    if (t1Location < 100 && t2Location < 100)
-                        MoveIt(ref t2Location);
-
+                    if (t1Location < 100 && t2Location < 100
+                    && t3Location < 100 && t4Location < 100
+                    && t5Location < 100 && t6Location < 100)
+                        MoveIt(ref t6Location);
                 }
             });
 
